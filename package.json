@@ -1,0 +1,24 @@
+{
+  "name": "freedictionaryapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @dictionary/web dev",
+    "build": "pnpm --filter @dictionary/web build",
+    "preview": "pnpm --filter @dictionary/web preview",
+    "typecheck": "pnpm --filter @dictionary/web exec tsc -b",
+    "test": "pnpm --filter @dictionary/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/dictionary.git"
+  }
+}
